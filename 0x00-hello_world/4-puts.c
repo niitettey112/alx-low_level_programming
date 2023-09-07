@@ -3,7 +3,7 @@
 /**
  * main: prints output using puts
  *
- * return: 0 always
+ * return: zero on success always
  *
  */
 
