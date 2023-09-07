@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main: prints output using puts
+ * main:
+ * prints puts output
  *
- * return: zero on success always
+ * return:
+ * zero on success always
  *
  */
 
