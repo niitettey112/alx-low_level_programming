@@ -20,15 +20,15 @@ int main(void)
 
 	if (n > 5)
 	{
-		printf("greater than 5\n", n);
+		printf("greater than 5\n");
 	}
 	else if (n < 6 && n != 0)
 	{
-		printf("less than 6 and 0\n", n);
+		printf("less than 6 and 0\n");
 	}
 	else
 	{
-		printf("and is 0\n", n);
+		printf("and is 0\n");
 	}
 	return (0);
 }
