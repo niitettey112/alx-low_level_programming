@@ -2,9 +2,7 @@
 
 /**
  * print_square - function that prints squares
- * @size: the number of squares to print
- *
- * Return: void
+ * @size: parameter
  */
 void print_square(void)
 {
