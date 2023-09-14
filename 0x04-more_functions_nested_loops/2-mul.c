@@ -3,11 +3,9 @@
 /**
  * mul - function to multiply two integers
  *
- * Return: 0
+ * Return: a * b
  */
 int mul(int a, int b)
 {
-	a * b;
-
-	return (0);
+	return (a * b);
 }
