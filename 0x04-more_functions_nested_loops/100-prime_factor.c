@@ -8,18 +8,19 @@
  */
 int main(void)
 {
-	long i, maxf;
+	long x, maxf;
 	long number = 612852475143;
 	double square = sqrt(number);
 
-	for (i = 1; i <= square; i++)
+	for (x = 1; x <= square; x++)
 	{
 		if (number % x == 0)
 		{
 			maxf = number / x;
 		}
 	}
+
 	printf("%ld\n", maxf);
 
 	return (0);
-}
+}}
