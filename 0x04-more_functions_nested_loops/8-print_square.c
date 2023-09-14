@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * print_square - function that prints squares
- * @size: parameter
- */
-void print_square(void)
+  * print_square - Prints n squares
+  * @size: size of squares
+  *
+  *Return: empty
+  */
+void print_square(int size)
 {
-	int a, b;
 
 	if (size <= 0)
 	{
@@ -14,6 +15,8 @@ void print_square(void)
 	}
 	else
 	{
+		int a, b;
+
 		for (a = 0; a < size; a++)
 		{
 			for (b = 0; b < size; b++)
