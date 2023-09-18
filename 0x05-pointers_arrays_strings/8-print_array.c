@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_array - function to print n number of array of integers
@@ -14,7 +15,7 @@ void print_array(int *a, int n)
 	for (; x < n; x++)
 	{
 		printf("%d", *(a + x));
-		if (a != (n - 1))
+		if (x != (n - 1))
 			printf(", ");
 	}
 	printf("\n");
