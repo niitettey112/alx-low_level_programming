@@ -4,7 +4,7 @@
  * string_toupper - function to change letters to uppercase
  * @a: parameter
  *
- * Return: n;
+ * Return: a;
  */
 char *string_toupper(char *a)
 {
@@ -19,5 +19,5 @@ char *string_toupper(char *a)
 		}
 		n++;
 	}
-	return (n);
+	return (a);
 }
