@@ -2,8 +2,8 @@
 
 /**
  * reverse_array - function to reverse an array
- * @a: parameter 1
- * @n: parameter 2
+ * @a: array
+ * @n: number of elements of the array
  *
  * Return: 0
  */
@@ -16,6 +16,6 @@ void reverse_array(int *a, int n)
 	{
 		y = a[x];
 		a[x] = a[n];
-		a[n] = t;
+		a[n] = y;
 	}
 }
