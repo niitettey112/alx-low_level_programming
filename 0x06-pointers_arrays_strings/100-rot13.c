@@ -13,15 +13,15 @@ char *rot13(char *n)
 	int j;
 
 	char sr1[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char sr2[] = "opqrstuvwxyzabcdefghijklmnOPQRSTUVWXYZABCDEFGHIJKLMN";
+	char sr2rot[] = "opqrstuvwxyzabcdefghijklmnOPQRSTUVWXYZABCDEFGHIJKLMN";
 
 	for (i = 0; n[i] != '\0'; i++)
 	{
-		for (j = 0; sr1[j] != '\0'; j++)
+		for (j = 0; j < 52; j++)
 		{
 			if (n[i] == sr1[j])
 			{
-				n[i] = sr2[j];
+				n[i] = sr2rot[j];
 				break;
 			}
 		}
