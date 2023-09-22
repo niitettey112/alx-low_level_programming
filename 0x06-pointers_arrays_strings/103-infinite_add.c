@@ -31,21 +31,21 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		f = e;
 		if (a >= 0)
 		{
-			n += n1[a] - '0';
+			f += n1[a] - '0';
 		}
 		if (b >= 0)
 		{
-			n += n2[b] - '0';
+			f += n2[b] - '0';
 		}
 		if (a < 0 && b < 0 && e == 0)
 		{
 			break;
 		}
 		e = f / 10;
-		r[c] = % 10 + '0';
+		r[c] = f % 10 + '0';
 	}
 	r[c] = '\0';
-	if (a >= 0 || j >= 0 || e)
+	if (a >= 0 || b >= 0 || e)
 	{
 		return (0);
 	}
