@@ -7,7 +7,7 @@
  * @r: buffer
  * @size_r: buffer size
  *
- * Return: dest
+ * Return: pointer to calling function
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
