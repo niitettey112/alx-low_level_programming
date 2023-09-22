@@ -17,7 +17,7 @@ char *cap_string(char *str)
 			a++;
 		}
 
-		if (str[a - 1] == '' ||
+		if (str[a - 1] == ' ' ||
 		    str[a - 1] == '\t' ||
 		    str[a - 1] == '\n' ||
 		    str[a - 1] == ',' ||
