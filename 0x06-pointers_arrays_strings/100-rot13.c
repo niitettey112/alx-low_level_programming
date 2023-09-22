@@ -13,7 +13,7 @@ char *rot13(char *n)
 	int j;
 
 	char sr1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char sr2rot[] = "OPQRSTUVWXYZABCDEFGHIJKLMNopqrstuvwxyzabcdefghijklmn";
+	char sr2rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklmn";
 
 	for (i = 0; n[i] != '\0'; i++)
 	{
