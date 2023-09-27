@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * prime_con - determine if n is a prime
- * @n: test case
- * @i: recurring factors
- * Description: determines if n is a prime using 2 parameters
+ * prime_num - function to determine if n is a prime
+ * @n: input
+ * @i: input
+ *
  * Return: 1 if n is a prime, 0 if not
  **/
 
@@ -20,9 +20,9 @@ int prime_num(int n, int i)
 }
 
 /**
- * is_prime_number - determine if n is a prime
- * @n: number to check
- * Description: determine if n is a prime
+ * is_prime_number - function to determine if n is a prime
+ * @n: input
+ * 
  * Return: 1 if prime, 0 if not
  **/
 
