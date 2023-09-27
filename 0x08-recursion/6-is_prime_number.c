@@ -22,7 +22,7 @@ int prime_num(int n, int i)
 /**
  * is_prime_number - function to determine if n is a prime
  * @n: input
- * 
+ *
  * Return: 1 if prime, 0 if not
  **/
 
