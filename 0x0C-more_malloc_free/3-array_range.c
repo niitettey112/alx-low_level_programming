@@ -3,14 +3,14 @@
 
 /**
  * *array_range - function that creates an array of integers
- * @min: minimum range of values 
- * @max: maximum range of values
+ * @min: minimum range
+ * @max: maximum range
  *
  * Return: pointer to the new array
  */
 int *array_range(int min, int max)
 {
-	int *range;
+	int *ptr;
 	int a, size;
 
 	if (min > max)
@@ -18,13 +18,13 @@ int *array_range(int min, int max)
 
 	size = max - min + 1;
 
-	range = malloc(sizeof(int) * size);
+	ptr = malloc(sizeof(int) * size);
 
-	if (range == NULL)
+	if (ptr == NULL)
 		return (NULL);
 
 	for (a = 0; min <= max; a++)
-		range[a] = min++;
+		ptr[a] = min++;
 
-	return (range);
+	return (ptr);
 }
