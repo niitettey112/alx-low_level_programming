@@ -3,8 +3,8 @@
 /**
  * array_iterator - function that prints each array element on a newline
  * @array: array
- * @size: size 
- * @action: pointer to print 
+ * @size: size
+ * @action: pointer to print
  *
  * Return: void
  */
