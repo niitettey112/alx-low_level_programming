@@ -3,7 +3,6 @@
 /**
  * my_message - function to print before the main
  *
- * Return: void
  */
 void __attribute__((constructor)) my_message(void)
 {
