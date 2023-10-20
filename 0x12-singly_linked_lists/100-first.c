@@ -1,5 +1,7 @@
 #include "lists.h"
 
+void print_before_main(void) __attribute__((constructor));
+
 /**
  * print_before_main - function that prints before main
  * Return: void
