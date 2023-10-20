@@ -1,12 +1,12 @@
-#include "lists.h"
+#include <stdio.h>
 
 /**
- * print - function to print before the main
+ * my_message - function to print before the main
  *
  * Return: void
  */
-void print(void)
+void __attribute__((constructor)) my_message(void)
 {
-	printf("You're beat! and yet, you must allow,");
-	printf("\nI bore my house upone my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upone my back!\n");
 }
