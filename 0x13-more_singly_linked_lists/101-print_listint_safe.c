@@ -1,7 +1,7 @@
 #iinclude "lists.h"
 
 /**
- * count_nodes_till_loop - function to count nodes to know how many nodes to print
+ * count_nodes_till_loop - count nodes to know how many nodes to print
  * @head: parameter
  *
  * Return: number of unique nodes in list before a loop
@@ -14,23 +14,17 @@ int count_nodes_till_loop(const listint_t *head)
 	tiger = cheetah = head;
 
 	while (tiger != NULL && cheetah != NULL)
-	{
 		tiger = tiger->next;
 		cheetah = cheetah->next->next;
 		num++;
 
 		if (tiger == cheetah)
-		{
 			tiger = head;
 			while (tiger != cheetah)
-			{
 				tiger = tiger->next;
 				cheetah = cheetah->next;
 				num++;
-			}
 			return (num);
-		}
-	}
 	return (0);
 }
 
@@ -46,13 +40,11 @@ int loop(const listint_t *head)
 	tiger = cheetah = head;
 
 	while (tiger != NULL && cheetah != NULL)
-	{
 		tiger = tiger->next;
 		cheetah = cheetah->next->next;
 
 		if (tiger == cheetah)
 			return (1);
-	}
 	return (0);
 }
 
@@ -74,25 +66,17 @@ size_t print_listint_safe(const listint_t *head)
 	loop_create = loop(head);
 
 	if (loop_create == 1)
-	{
 		num = count_nodes_till_loop(head);
 		for (loop_create = 0; loop_create < num; loop_create++)
-		{
 			printf("[%p] %d\n", (void *)temp, temp->n);
 			num_n += 1;
 			temp = temp->next;
-		}
-	}
 	else if (loop_create == 0)
-	{
 		temp = head;
 		while (temp != NULL)
-		{
 			printf("[%p] %d\n", (void *)temp, temp->n);
 			num_n += 1;
 			temp = temp->next;
-		}
-	}
 
 	return (num_n);
 }
