@@ -1,7 +1,7 @@
-#iinclude "lists.h"
+#include "lists.h"
 
 /**
- * count_nodes_till_loop - function to count nodes to know how many nodes to print
+ * count_nodes_till_loop - function to count nodes to print
  * @head: parameter
  *
  * Return: number of unique nodes in list before a loop
