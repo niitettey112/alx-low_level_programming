@@ -6,6 +6,7 @@
  * @n: parameter
  * @m: parameter
  *
+ * Return: number of bits changed
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
@@ -15,7 +16,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	while (difference > 0)
 	{
 		flip_bits += difference & 1;
-		difference >>= 1:
+		difference >>= 1;
 	}
 
 	return (flip_bits);
