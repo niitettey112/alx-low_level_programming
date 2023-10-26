@@ -10,6 +10,9 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int ans = 0;
 	int a;
+	
+	if (b == NULL)
+		return (0);
 
 	for  (a = 0; b[a] != '\0'; a++)
 	{
@@ -17,8 +20,6 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		ans = (ans << 1) + (b[a] - '0');
 	}
-	if (b == NULL)
-		return (0);
 
 	return (ans);
 }
